@@ -5,7 +5,7 @@
 1. Read sections 2.1 and 2.2 of "Linear Complementarity, Linear and Nonlinear
    Programming" by Katta Murty (book linked on Brightspace and below).
 2. Implement Lemke's method in `solve_lcp.jl`.
-3. Solve the quadratic program specified in `solve_qp.jl` by setting it up as
+3. Solve the quadratic program specified in `qp.jl` by setting it up as
    an LCP and either using your implementation of Lemke's method or the [Path
    Solver](https://github.com/chkwon/PATHSolver.jl)
 4. Upload a pdf to this repository containing your solution to the following:
