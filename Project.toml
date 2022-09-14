@@ -1,0 +1,8 @@
+name = "Assignment2"
+uuid = "850a9acf-275d-42ef-a9a3-0fcfaf60c582"
+authors = ["Forrest Laine <forrest.laine@vanderbilt.edu>"]
+version = "0.1.0"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+PATHSolver = "f5f7c340-0bb3-5c69-969a-41884d311d1b"
