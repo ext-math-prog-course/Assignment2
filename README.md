@@ -10,7 +10,7 @@
    Solver](https://github.com/chkwon/PATHSolver.jl)
 4. Upload a pdf to this repository containing your solution to the following:
 
-   A. If M is positive semidefinite (x'Mx >= 0 for all x), prove that (M+M')x = 0
+   A. If M is positive semidefinite (x'Mx >= 0 for all x), prove that (M+M')x = 0 whenever x'Mx = 0. 
    
    B. If z is a solution to LCP(M,q), with M positive semidefinite, prove that z+d is also a solution if 
       1.    z + d >= 0
