@@ -22,7 +22,15 @@ where x is the optimal solution, and λ is the vector of lagrange multipliers
 associated with the solution x.
 """
 function solve_qp(w)
-    x = -ones(2) # todo: replace this with your solution
-    λ = -ones(2) # same here
+    Q = I(2)
+    A = [-1. -1;
+         1  -1]
+    b = [1.5, 1.0]
+    q = -w
+    M = [Q -A'; A zeros(2,2)]
+    q = [q; b]
+    (; w, z, ret) = solve_lcp(M, q)
+    x = z[1:2]
+    λ = z[3:4]
     return (; x, λ)
 end
