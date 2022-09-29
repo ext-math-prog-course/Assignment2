@@ -49,7 +49,7 @@ function solve_lcp(M, q; max_iters=50, tol=1e-6)
     while 2*n+1 in basis && iters < max_iters
         iters += 1
         d = T[:, entering_ind]
-        wrong_dir = d .≤ 0
+        wrong_dir = d .≤ tol
         ratios = map(d, T[:, end]) do di, ri
             di ≤ 0 ? Inf : ri / di
         end
