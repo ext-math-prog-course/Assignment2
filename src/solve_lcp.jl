@@ -51,7 +51,7 @@ function solve_lcp(M, q; max_iters=50, tol=1e-6)
         d = T[:, entering_ind]
         wrong_dir = d .≤ tol
         ratios = map(d, T[:, end]) do di, ri
-            di ≤ 0 ? Inf : ri / di
+            di ≤ tol ? Inf : ri / di
         end
         t = argmin(ratios)
         if !all(wrong_dir)
